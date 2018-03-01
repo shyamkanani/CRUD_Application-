@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Insert</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"  crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"  crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"  crossorigin="anonymous"></script>           
+        <link href="signin.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style=" margin-top: -40px; ">
+            <nav class="navbar navbar-light  bg-light">
+            <a class="navbar-brand" href="#"><img src="my.png" width="30" height="30" alt="SK" >  CRUD Application</a>
+            <ul class="nav nav-tabs">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">Sign In</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="insert.html">Registration</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+            </li>
+            </ul>
+            </nav>
+        
+        <form class="form-signin" action="Addnew" method="post" >
+        <h2 class="form-signin-heading">Enter The Values</h2>
+        <label for="inputid" class="sr-only">ID</label>
+        <input type="number" id="inputid" class="form-control" placeholder="ID" name="id" required autofocus>
+        <br/>
+        <label for="inputusername" class="sr-only">Username</label>
+        <input type="text" id="inputusername" class="form-control" placeholder="Username" name="username" required >
+        <br/>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputpassword" class="form-control" placeholder="Password" name="password" required>
+        <br/>
+        <label for="inputusername" class="sr-only">email</label>
+        <input type="email" id="inputemail" class="form-control" placeholder="Email" name="email" required >
+        <br/>
+        <div align="center" >
+        <select class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="country" required>
+            <option value="India">India</option>
+            <option value="UK">UK</option>
+            <option value="USA">USA</option>
+            <option value="Australia">Australia</option>
+        </select>
+        </div>
+        <br/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+        <button class="btn btn-lg btn-secondary btn-block" type="reset">Reset</button>
+      </form>
+      <br/>
+      <br/>
+      <br/>
+      <h6 style='color:red;'><marquee>*For insert a new data please, keep in mind that id is unique. So please insert a unique id. </marquee></h6>");
+                   
+    </body>
+</html>
