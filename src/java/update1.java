@@ -31,10 +31,10 @@ public class update1 extends HttpServlet {
                    out.println("<a class='navbar-brand' href='#'><img src='my.png' width='30' height='30' alt='SK' >  CRUD Application</a>");
                    out.println("<ul class='nav nav-tabs'>");
                    out.println("<li class='nav-item'>");
-                   out.println("<a class='nav-link ' href='profile'>Profile</a>");
+                   out.println("<a class='nav-link active' href='profile'>Profile</a>");
                    out.println("</li>");
                    out.println("<li class='nav-item'>");
-                   out.println("<a class='nav-link active' href='display'>Dashboard</a>");
+                   out.println("<a class='nav-link ' href='display'>Dashboard</a>");
                    out.println("</li>");
                    out.println("<li class='nav-item'>");
                    out.println("<a class='nav-link' href='about.html'>About</a>");
