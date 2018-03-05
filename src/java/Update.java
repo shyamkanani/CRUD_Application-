@@ -15,12 +15,13 @@ public class Update extends HttpServlet {
                 Connection cn=null;
                 Class.forName("com.mysql.jdbc.Driver");
                 cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/sk","root","student");
-            String query ="update crud set username=?,password=?,email=? where id=?";
+            String query ="update crud set username=?,password=?,email=?,country=? where id=?";
             PreparedStatement pst=cn.prepareStatement(query);
             pst.setString(1,request.getParameter("username"));
             pst.setString(2,request.getParameter("password"));
             pst.setString(3,request.getParameter("email"));
-            pst.setInt(4,Integer.parseInt(request.getParameter("id")));
+            pst.setString(4,request.getParameter("country"));
+            pst.setInt(5,Integer.parseInt(request.getParameter("id")));
             
             if(pst.executeUpdate()==1)
             {
